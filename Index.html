@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
+
+        body {
+            background-color: black;
+        }
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            background-color: #f8f9fa;
+            background-color: #7e8d9727;
         }
         .logo {
             font-size: 24px;
             font-weight: bold;
+            color: white;
         }
         nav ul {
             list-style: none;
@@ -26,13 +31,42 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: #333;
+            color: #eeeeee;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px; /* Add space between sections */
+        }
+        .myPhoto {
+            background-image: url('https://images.unsplash.com/photo-1622838320000-3b3b3b3b3b3b');
+            background-size: cover;
+            background-position: left;
+            height: 1000px; /* Adjust the height */
+            background-color: white;
+            border: 2px solid #00bfff;
+            flex: 1;
+        }
+        .aboutMe {
+            flex: 1;
+            padding: 20px;
+            height: 960px; /* Adjust the height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+        .aboutMe h1, .aboutMe p {
+            color: white;
+            font-family: 'Roboto', sans-serif; /* Example font family */
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">My Logo</div>
+        <div class="logo">Hello.World</div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -42,9 +76,15 @@
             </ul>
         </nav>
     </header>
-    <section id="home"></section>
-    <section id="about"></section>
+    <div class="container">
+        <section id="myPhoto" class="myPhoto"></section>
+        <section id="aboutme" class="aboutMe">
+            <h1>Hi, I`m Kenneth..</h1>
+            <p>I am a skilled IT professional with years of experience in customer service, technical support, and application management. I have expertise in Salesforce support/administration and basic development background, focusing on automation, integration, and troubleshooting. I also have a background in SharePoint support and development. Known for my problem-solving abilities and adaptability, I thrive in fast-paced environments, delivering both technical support and custom solutions to meet business needs.</p>
+        </section>
+    </div>
     <section id="projects"></section>
     <footer id="contact"></footer>
 </body>
+</html>
 </html>
